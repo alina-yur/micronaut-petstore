@@ -61,3 +61,33 @@
 - [Micronaut Hikari JDBC Connection Pool documentation](https://micronaut-projects.github.io/micronaut-sql/latest/guide/index.html#jdbc)
 
 
+
+
+
+Manual config
+
+# Application Configuration
+micronaut.application.name=micronaut-petstore
+
+# Thymeleaf configuration
+micronaut.views.thymeleaf.enabled=true
+micronaut.views.thymeleaf.cache=false
+
+# Disable Test Resources
+micronaut.test.resources.enabled=false
+
+# Database configuration
+datasources.default.dialect=MYSQL
+datasources.default.db-type=mysql
+datasources.default.driver-class-name=com.mysql.cj.jdbc.Driver
+datasources.default.url=jdbc:mysql://localhost:3306/petstore_db
+datasources.default.username=petstore_user
+datasources.default.password=password
+
+# Flyway migration
+flyway.datasources.default.enabled=true
+
+
+
+
+
